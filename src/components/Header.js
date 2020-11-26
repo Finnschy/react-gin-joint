@@ -1,6 +1,6 @@
 const Header = () => {
     return (  
-        <header>
+        <header id="headerHome">
             <h2>A CLASSIC</h2>
             <h1>GIN JOINT</h1>
             <h2>NEW YORK</h2>

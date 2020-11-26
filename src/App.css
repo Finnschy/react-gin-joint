@@ -12,15 +12,43 @@
   margin: 0;
   padding: 0;
   font-weight: 400;
+  list-style: none;
+  text-decoration: none;
 }
 
-header {
+nav {
+  background: var(--secondary-color);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+nav a {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.isActive {
+  color: var(--main-color);
+}
+
+#headerHome {
   background: url('Header.png') center / cover no-repeat;
+}
+
+#headerHome , #headerShop{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 } 
+
+#headerShop {
+  background: url('shop-open.jpg') center / cover no-repeat;
+}
 
 header h1, header h2 {
   font-family: var(--main-headline);
@@ -40,12 +68,15 @@ header h2 {
 }
 
 .firstSection {
-  background: var(--secondary-color);
   color: #fff;
+  background: var(--secondary-color);
+}
+
+.firstSection{
   display: flex;
   justify-content: space-between;
   padding: 15rem 0;
-}
+} 
 
 .firstSection img {
   width: 60rem;
@@ -64,7 +95,7 @@ header h2 {
   width: 35rem;
 }
 
-.storyArticle , .foodArticle{
+.storyArticle , .foodArticle, .contactArticle{
   align-self: center;
   margin-left: 8rem;
 }
@@ -93,18 +124,16 @@ header h2 {
   right: 0;
 }
 
-.storyArticle h5 , .foodArticle h5{
+.storyArticle h5 , .foodArticle h5 , .contactArticle h5{
   font-size: 1rem;
-  
 }
 
-.storyArticle h2 , .foodArticle h2 {
+.storyArticle h2 , .foodArticle h2 , .contactArticle h2 {
   font-size: 5rem;
   line-height: 4.5rem;
-  text-shadow: 0px 0px 40px var(--secondary-color);
 } 
 
-.storyArticle p , .foodArticle p{
+.storyArticle p , .contactArticle p{
   font-size: 1.6rem;
   margin-top: 2rem;
 }
@@ -227,4 +256,41 @@ header h2 {
 
 #social img:nth-of-type(1) {
   margin-right: 2rem;
+}
+
+#ShopComingSoon {
+  background: var(--main-color);
+  height: 100vh;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ContactFirstSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactArticle h2 {
+  color: #fff;
+}
+
+.ContactFirstSection {
+  background: var(--main-color);
+}
+
+.ContactSecondSect {
+  background: url(contact-map.png) center / cover no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ContactSecondSect div {
+  background: #C4C4C4;
+  text-align: center;
+  font-size: 5rem;
+  padding: 3rem;
 }
