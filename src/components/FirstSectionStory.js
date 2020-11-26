@@ -1,6 +1,6 @@
 const FirstSectionStory = () => {
     return (  
-        <section className="firstThirdSection">
+        <section className="firstSection">
             <article className="storyArticle">
                 <h5>ABOUT</h5>
                 <h2>THE STORY OF</h2>

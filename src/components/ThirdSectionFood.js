@@ -1,6 +1,6 @@
 const ThirdSectionFood = () => {
     return ( 
-        <section className="firstThirdSection">
+        <section className="ThirdSection">
             <article className="foodArticle">
                 <h5>COCKTAIL & FOOD MENUS</h5>
                 <h2>HAND CRAFTED</h2>
