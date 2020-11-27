@@ -14,6 +14,7 @@
   font-weight: 400;
   list-style: none;
   text-decoration: none;
+  font-family: var(--main-copy);
 }
 
 nav {
@@ -29,6 +30,11 @@ nav ul {
 nav a {
   color: #fff;
   font-size: 2rem;
+  transition: color 1s ease;
+}
+
+nav a:hover {
+  color: var(--main-color);
 }
 
 .isActive {
@@ -89,6 +95,7 @@ header h2 {
   display: inline-block;
   padding: 4% 8%;
   margin-top: 3rem;
+  transition: opacity 1s ease;
 }
 
 .storyArticle {
@@ -236,6 +243,14 @@ header h2 {
   border-bottom: 1px solid var(--stroke-color);
 }
 
+#footerOne img:hover {
+  animation: spinning 5s ease 1;
+}
+
+#footerTwo img:hover {
+  animation: shake 1s ease 1;
+}
+
 #FooterContainer {
   display: flex;
   width: 40%;
@@ -254,8 +269,16 @@ header h2 {
   right: 15rem;
 }
 
+#social img {
+  transition: opacity 1s ease;
+}
+
 #social img:nth-of-type(1) {
   margin-right: 2rem;
+}
+
+#social img:hover {
+  opacity: .5;
 }
 
 #ShopComingSoon {
@@ -280,7 +303,7 @@ header h2 {
   background: var(--main-color);
 }
 
-.ContactSecondSect {
+.ContactSecondSect{
   background: url(contact-map.png) center / cover no-repeat;
   height: 100vh;
   display: flex;
@@ -294,3 +317,81 @@ header h2 {
   font-size: 5rem;
   padding: 3rem;
 }
+
+.ContactThirdSection {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: space-around;
+  background: var(--main-color);
+  
+}
+
+#contactAddress h2{
+  color: #fff;
+  font-size: 3rem;
+}
+
+.FormFlex {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+}
+
+.FormFlex input , #message  {
+  padding: .6rem;
+  margin: 1rem 0;
+}
+
+.FormFlex .button {
+  width: 30%;
+  border: none;
+  background: var(--secondary-color);
+  color: #fff;
+  margin-top: 1rem;
+}
+
+#contactTimes {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 1rem;
+}
+
+#contactTimes h5 {
+  margin-bottom: .5rem;
+}
+
+#contactTimes p {
+  color: #fff;
+}
+
+
+.button:hover {
+  opacity: .5;
+}
+
+@keyframes spinning {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shake{ 
+  0%{ 
+    transform: rotate(0deg); 
+  } 
+  25%{ 
+    transform: rotate(5deg);
+  } 
+    
+  50%{ 
+    transform: rotate(-5deg); 
+  } 
+  100%{ 
+    transform: rotate(0deg);
+  } 
+} 
