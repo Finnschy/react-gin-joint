@@ -1,13 +1,13 @@
 import {
     NavLink
-  } from "react-router-dom";
+} from "react-router-dom";
 
 const Navigation = () => {
-    return (  
+    return (
         <nav>
             <ul>
                 <li>
-                    <NavLink to="/home" activeClassName="isActive">HOME</NavLink>
+                    <NavLink exact to="/" activeClassName="isActive">HOME</NavLink>
                 </li>
                 <li>
                     <NavLink to="/entertainment" activeClassName="isActive">ENTERTAINMENT</NavLink>
@@ -21,9 +21,10 @@ const Navigation = () => {
                 <li>
                     <NavLink to="/contact" activeClassName="isActive">CONTACT</NavLink>
                 </li>
+
             </ul>
         </nav>
     );
 }
- 
+
 export default Navigation;

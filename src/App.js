@@ -20,7 +20,6 @@ function App() {
         <Route path="/shop" component={Shop} />
         <Route path="/events" component={Events} />
         <Route path="/contact" component={Contact} />
-        <Route path="/home" exact component={Home} />
         <Route path="/" exact component={Home} />
       </Switch>
     </Router>
